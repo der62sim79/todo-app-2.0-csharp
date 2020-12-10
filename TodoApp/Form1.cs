@@ -29,7 +29,10 @@ namespace TodoApp
             textTodo.Text = "";
             btnSave.Text = "Save";
             btnDelete.Enabled = false;
-            model.id = 0;
+            if(checkBox1 != null)
+            {
+                checkBox1.Checked = false;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
